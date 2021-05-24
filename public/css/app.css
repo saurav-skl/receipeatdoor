@@ -44,3 +44,208 @@ section.hero {
   color: #fff;
 }
 
+.btn__primary {
+  background: #fe5f1e;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn__primary:hover {
+  background: #b23301;
+}
+
+.cart {
+  background: #f8f8f8;
+}
+
+/* BLUE */
+
+.login {
+  margin: auto;
+  background-color: #f8f8f8;
+  width: 600px;
+  height: 500px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login header {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.login header .header-menu {
+  margin: auto 0;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  color: #fe5f1e;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.login header .header-menu li {
+  cursor: pointer;
+}
+
+.login header .header-menu #header-login-button {
+  background-color: transparent;
+  border: none;
+}
+
+.login header .header-menu #header-login-button:hover + #header-login-line {
+  width: 90%;
+}
+
+.login header .header-menu #header-login-line {
+  margin: 5px auto;
+  height: 4px;
+  width: 50%;
+  background-color: #b23301;
+  border-radius: 2px;
+  transition-duration: 200ms;
+  display: block;
+}
+
+.login header .header-menu #header-register-button {
+  background-color: #fff;
+  padding: 10px 30px 10px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition-duration: 400ms;
+}
+
+.login header .header-menu #header-register-button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login .login__page {
+  height: calc(100% - 250px);
+}
+
+.login .register__page {
+  height: calc(100% - 170px);
+}
+
+.login #content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.login #content-wrapper .client-info {
+  margin: 0 auto;
+  width: 70%;
+  height: 80px;
+  background-color: #f8f8f8;
+  border: solid #f8f8f8 2px;
+  border-radius: 15px;
+  text-indent: 20px;
+  color: #19122b;
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login #content-wrapper .client-info:focus {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login #content-wrapper .client-info:not(:focus):invalid {
+  border: solid #b23301 2px;
+}
+
+.login #content-wrapper #recovery:link {
+  text-decoration: none;
+  color: #ccc;
+  padding-left: 54%;
+}
+
+.login #content-wrapper #signin-button {
+  width: 70%;
+  height: 75px;
+  background-color: #fe5f1e;
+  border: none;
+  margin: 20px auto 10px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 15px;
+  font-weight: 400;
+  transition-duration: 200ms;
+}
+
+.login #content-wrapper #signin-button:hover {
+  box-shadow: 0 20px 20px #fe5f1e;
+}
+
+.login #content-wrapper #register-button {
+  width: 70%;
+  height: 75px;
+  background-color: #fe5f1e;
+  border: none;
+  margin: 20px auto 10px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 15px;
+  font-weight: 400;
+  transition-duration: 200ms;
+}
+
+.login #content-wrapper #register-button:hover {
+  box-shadow: 0 20px 20px #fe5f1e;
+}
+
+.login #content-wrapper .span__name {
+  color: #fe5f1e;
+}
+
+.login #content-wrapper #other-option-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.login #content-wrapper #other-option-wrapper .line {
+  width: 30%;
+  height: 2px;
+  background-color: #f8f8f8;
+  margin-top: 0.6em;
+}
+
+.login #content-wrapper #other-option-wrapper #continue-with {
+  color: #ccc;
+}
+
+.login #content-wrapper #other-icon-wrapper {
+  margin: 10px auto;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.login #content-wrapper #other-icon-wrapper .other-icon {
+  display: flex;
+  width: 25%;
+  height: 60px;
+  background-color: transparent;
+  border: solid #f8f8f8 2px;
+  border-radius: 10px;
+  transition-duration: 400ms;
+}
+
+.login #content-wrapper #other-icon-wrapper .other-icon:hover {
+  border: solid #fff 2px;
+  background-color: #fff;
+  box-shadow: 0 20px 20px #fe5f1e;
+}
+
+.login #content-wrapper #other-icon-wrapper .other-icon svg {
+  height: 60%;
+  margin: auto;
+}
+
