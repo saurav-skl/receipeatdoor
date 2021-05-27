@@ -429,11 +429,11 @@ section.hero {
 }
 
 .login .login__page {
-  height: calc(100% - 250px);
+  height: 300px;
 }
 
 .login .register__page {
-  height: calc(100% - 170px);
+  height: 80%;
 }
 
 .login #content-wrapper {
@@ -459,10 +459,7 @@ section.hero {
 
 .login #content-wrapper .client-info:focus {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.login #content-wrapper .client-info:not(:focus):invalid {
-  border: solid #b23301 2px;
+  outline: none;
 }
 
 .login #content-wrapper #recovery:link {
@@ -564,6 +561,12 @@ section.hero {
 .noty_theme__mint {
   border-radius: 50px !important;
   padding-left: 8px !important;
+}
+
+.message__register {
+  margin: auto;
+  font-size: medium;
+  font-weight: bold;
 }
 
 

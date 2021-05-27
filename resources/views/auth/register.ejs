@@ -10,11 +10,38 @@
       <!-- 			<li id="header-register-button">Sign In</li> -->
     </ul>
   </header>
-  <div id="content-wrapper" class="register__page">
-    <input type="name" class="client-info" placeholder="Name" />
-    <input type="email" class="client-info" placeholder="Email" />
-    <input type="password" class="client-info" placeholder="Password" />
-    <button  id="register-button" >Register</button>
-    <a href="/login" id="recovery" class="span__name">Already have account?</a>
-  </div>
+  <form action="/register" method="POST">
+    <div id="content-wrapper" class="register__page">
+      <% if(messages.error) { %>
+        <span class="text-red-500 text-sm message__register"><%= messages.error %></span>
+      <% } %>
+      <input
+        name="name"
+        value="<%= messages.name %>"
+        type="name"
+        class="client-info"
+        placeholder="Name"
+        required
+      />
+      <input
+        name="email"
+        value="<%= messages.email %>"
+        type="email"
+        class="client-info"
+        placeholder="Email"
+        required
+      />
+      <input
+        name = "password"
+        type="password"
+        class="client-info"
+        placeholder="Password"
+        
+      />
+      <button id="register-button">Register</button>
+      <a href="/login" id="recovery" class="span__name"
+        >Already have account?</a
+      >
+    </div>
+  </form>
 </div>

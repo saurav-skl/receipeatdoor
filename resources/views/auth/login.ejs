@@ -1,19 +1,38 @@
-<div class="login">
-  <header>
-    <ul class="header-menu">
-      <li>
-        <div id="header-login-wrapper">
-          <p id="header-login-button">Log In</p>
-          <span id="header-login-line"></span>
-        </div>
-      </li>
-      <!-- 			<li id="header-register-button">Sign In</li> -->
-    </ul>
-  </header>
-  <div id="content-wrapper" class="login__page">
-    <input type="email" class="client-info" placeholder="Email" />
-    <input type="password" class="client-info" placeholder="Password" />
-    <button id="signin-button">Log In</button>
-    <a href="/register" id="recovery" class="span__name">Don't have account?</a>
+<form action="/login" method="POST">
+  <div class="login">
+    <header>
+      <ul class="header-menu">
+        <li>
+          <div id="header-login-wrapper">
+            <p id="header-login-button">Log In</p>
+            <span id="header-login-line"></span>
+            <% if(messages.error) { %>
+            <span class="text-red-500 text-sm"><%= messages.error %></span>
+            <% } %>
+          </div>
+        </li>
+        <!-- 			<li id="header-register-button">Sign In</li> -->
+      </ul>
+    </header>
+    <div id="content-wrapper" class="login__page">
+      <input
+        name="email"
+        type="email"
+        class="client-info"
+        placeholder="Email"
+        required
+      />
+      <input
+        name="password"
+        type="password"
+        class="client-info"
+        placeholder="Password"
+        required
+      />
+      <button id="signin-button" type="submit">Log In</button>
+      <a href="/register" id="recovery" class="span__name"
+        >Don't have account?</a
+      >
+    </div>
   </div>
-</div>
+</form>

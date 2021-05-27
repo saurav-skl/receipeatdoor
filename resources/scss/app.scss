@@ -1,7 +1,6 @@
 @import "_variables.scss";
-@import '~noty/src/noty.scss';
-@import '~noty/src/themes/mint.scss';
-
+@import "~noty/src/noty.scss";
+@import "~noty/src/themes/mint.scss";
 
 body {
   font-family: "Times New Roman", "Times", "serif";
@@ -46,7 +45,7 @@ section.hero {
     border-color: $pure;
     color: $pure;
   }
-  &:focus{
+  &:focus {
     outline: none;
   }
 }
@@ -122,10 +121,10 @@ $bc-color: $secondary;
     }
   }
   .login__page {
-    height: calc(100% - 250px);
+    height: 300px;
   }
   .register__page {
-    height: calc(100% - 170px);
+    height: 80%;
   }
   #content-wrapper {
     display: flex;
@@ -148,10 +147,11 @@ $bc-color: $secondary;
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
       &:focus {
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        outline: none;
       }
-      &:not(:focus):invalid {
-        border: solid $primary-hover 2px;
-      }
+      // &:not(:focus):invalid {
+      //   border: solid $primary-hover 2px;
+      // }
     }
     #recovery:link {
       text-decoration: none;
@@ -239,7 +239,13 @@ $bc-color: $secondary;
   height: auto;
 }
 
-.noty_theme__mint{
+.noty_theme__mint {
   border-radius: 50px !important;
   padding-left: 8px !important;
+}
+
+.message__register {
+  margin: auto;
+  font-size: medium;
+  font-weight: bold;
 }
