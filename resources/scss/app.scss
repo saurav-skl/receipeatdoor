@@ -249,3 +249,25 @@ $bc-color: $secondary;
   font-size: medium;
   font-weight: bold;
 }
+
+a.link {
+  color: $primary;
+}
+
+
+@media (max-width: 1060px) {
+  .container {
+    max-width: 90%;
+  }
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    // max-width: 1024px;
+  }
+}

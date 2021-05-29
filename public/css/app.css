@@ -569,4 +569,20 @@ section.hero {
   font-weight: bold;
 }
 
+a.link {
+  color: #fe5f1e;
+}
+
+@media (max-width: 1060px) {
+  .container {
+    max-width: 90%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
 

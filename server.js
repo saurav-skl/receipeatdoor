@@ -61,6 +61,7 @@ app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+
 // Global Middleware
 
 app.use((req, res, next) => {
