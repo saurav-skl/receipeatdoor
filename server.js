@@ -12,8 +12,8 @@ const MongoDbStore = require("connect-mongo");
 const passport = require("passport");
 
 // Database connections
-const url =
-  "mongodb+srv://pizzaboy:test123@cluster0.fwgvs.mongodb.net/pizza?retryWrites=true&w=majority";
+const url = process.env.MONGO_CONNECTION_URL;
+
 mongoose.connect(url, {
   useNewUrlParser: true,
   useCreateIndex: true,
@@ -61,7 +61,6 @@ app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-
 // Global Middleware
 
 app.use((req, res, next) => {
@@ -76,6 +75,10 @@ app.set("views", path.join(__dirname, "/resources/views"));
 app.set("view engine", "ejs");
 
 require("./routes/web")(app);
+
+app.use((req, res) => {
+  res.status(404).render("error/404_page");
+});
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
