@@ -10,7 +10,6 @@
     "watch": "npx mix watch",
     "prod": "npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js  --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "build": "babel src -d lib",
     "test": "jest"
   },
   "keywords": [],
@@ -38,6 +37,9 @@
     "tailwindcss": "^2.1.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
     "laravel-mix": "^6.0.19",
     "nodemon": "^2.0.7",
     "postcss": "8.1",
