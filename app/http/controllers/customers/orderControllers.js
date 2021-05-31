@@ -23,7 +23,7 @@ function orderControllers() {
         .then((result) => {
           delete req.session.cart;
           req.flash("success", "Order placed Successfully");
-          res.redirect("/customer-orders");
+          res.redirect("/paynow");
         })
         .catch((err) => {
           req.flash("error", "Something went Wrong");

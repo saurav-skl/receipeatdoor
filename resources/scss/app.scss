@@ -426,11 +426,20 @@ section.status {
 
 a {
   text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  text-decoration: underline;
+  color: $primary;
 }
 
 // Error page end
+
+.card {
+  // color:$primary;
+  background-color: rgb(14, 111, 190);
+}
+
+nav {
+  color: $primary;
+}
+a:hover {
+  text-decoration: none;
+  color: $dark;
+}
