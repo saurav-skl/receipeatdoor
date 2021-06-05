@@ -21,7 +21,7 @@ function orderControllers() {
       order
         .save()
         .then((result) => {
-          delete req.session.cart;
+          // delete req.session.cart;
           req.flash("success", "Order placed Successfully");
           res.redirect("/paynow");
         })

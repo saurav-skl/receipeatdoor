@@ -50,7 +50,7 @@ function initRoutes(app) {
 
     var paymentDetails = {
       amount: req.body.amount,
-      customerId: req.body.name,
+      customerId: req.body.id,
       customerEmail: req.body.email,
       customerPhone: req.body.phone,
     };
@@ -63,20 +63,20 @@ function initRoutes(app) {
       res.status(400).send("Payment failed");
     } else {
       var params = {};
-      params["MID"] = "EbVVFj20319797324162";
-      params["WEBSITE"] = "WEBSTAGING";
+      params["MID"] = process.env.PAYTM_MID;
+      params["WEBSITE"] = process.env.PAYTM_WEBSITE;
       params["CHANNEL_ID"] = "WEB";
       params["INDUSTRY_TYPE_ID"] = "Retail";
       params["ORDER_ID"] = "TEST_" + new Date().getTime();
       params["CUST_ID"] = paymentDetails.customerId;
       params["TXN_AMOUNT"] = paymentDetails.amount;
-      params["CALLBACK_URL"] = "http://localhost:3000/callback";
+      params["CALLBACK_URL"] = process.env.CALLBACK_URL;
       params["EMAIL"] = paymentDetails.customerEmail;
       params["MOBILE_NO"] = paymentDetails.customerPhone;
 
       checksum_lib.genchecksum(
         params,
-        "ZeqfxucknolCuz7U",
+        process.env.PAYTM_KEY,
         function (err, checksum) {
           var txn_url =
             "https://securegw-stage.paytm.in/theia/processTransaction"; // for staging

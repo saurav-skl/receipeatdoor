@@ -1939,8 +1939,8 @@ function updateCart(pizza) {
 
 addToCart.forEach(function (btn) {
   btn.addEventListener("click", function (e) {
+    console.log(btn.dataset.pizza);
     var pizza = JSON.parse(btn.dataset.pizza);
-    console.log(pizza);
     updateCart(pizza);
   });
 }); // Remove alert message after X seconds

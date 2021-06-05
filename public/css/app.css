@@ -321,8 +321,16 @@ nav li a:hover {
   color: #fe5f1e;
 }
 
+#logo {
+  height: 65px;
+}
+
 #logo:hover {
   cursor: pointer;
+}
+
+.logo__image {
+  height: 100%;
 }
 
 section.hero {
@@ -750,7 +758,7 @@ a {
 }
 
 .card {
-  background-color: #0e6fbe;
+  background-color: #fe5f1e;
 }
 
 nav {
@@ -759,6 +767,10 @@ nav {
 
 a:hover {
   text-decoration: none;
+  color: #232323;
+}
+
+.payment__btn {
   color: #232323;
 }
 

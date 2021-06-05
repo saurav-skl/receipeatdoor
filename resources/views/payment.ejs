@@ -1,30 +1,60 @@
 <div class="menu container mx-auto py-8 max-w-7xl">
   <div class="col-md-4 offset-md-4">
+    <% if(session.cart){ %>
     <div class="card">
       <div class="card-body">
         <form class="" action="/paynow" method="POST">
           <div class="form-group">
             <label for="">Name: </label>
-            <input class="form-control" type="text" name="name" value="" />
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              value=""
+              required
+            />
+            <input
+              type="hidden"
+              name="id"
+              value="<%= session.passport.user %>"
+            />
           </div>
           <div class="form-group">
             <label for="">Email: </label>
-            <input class="form-control" type="text" name="email" value="" />
+            <input
+              class="form-control"
+              type="text"
+              name="email"
+              value=""
+              required
+            />
           </div>
           <div class="form-group">
             <label for="">Phone: </label>
-            <input class="form-control" type="text" name="phone" value="" />
+            <input
+              class="form-control"
+              type="text"
+              name="phone"
+              value=""
+              required
+            />
           </div>
           <div class="form-group">
             <label for="">Amount: </label>
-            <input class="form-control" type="text" name="amount" value="" />
+            <input
+              class="form-control"
+              type="text"
+              name="amount"
+              value="<%= session.cart.totalPrice %>"
+            />
           </div>
           <div class="form-group">
-            <button class="btn form-control btn-primary">Pay Now</button>
+            <button class="btn form-control payment__btn">Pay Now</button>
           </div>
         </form>
         <div><a href="/customer-orders">Go in cart</a></div>
       </div>
     </div>
+    <% } %>
   </div>
 </div>
