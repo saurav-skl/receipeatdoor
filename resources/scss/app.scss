@@ -445,10 +445,18 @@ nav {
 }
 a:hover {
   text-decoration: none;
-  color: $dark;
+  color: $primary-hover;
 }
 
 .payment__btn {
   color: $dark;
+}
 
+.btn__dark {
+  background-color: $dark;
+  display: flex;
+  justify-content: center;
+  &:hover {
+    color: $primary-hover;
+  }
 }

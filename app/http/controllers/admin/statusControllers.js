@@ -8,9 +8,9 @@ function statusControllers() {
         { status: req.body.status },
         (err, data) => {
           if (err) {
-            return res.redirect("/admin/orders");
+            return res.redirect("/admin-orders");
           }
-          return res.redirect("/admin/orders");
+          return res.redirect("/admin-orders");
         }
       );
     },

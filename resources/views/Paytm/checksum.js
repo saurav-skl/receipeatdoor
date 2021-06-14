@@ -11,7 +11,8 @@ function paramsToString(params, mandatoryflag) {
   var tempKeys = Object.keys(params);
   tempKeys.sort();
   tempKeys.forEach(function (key) {
-  var n = params[key].includes("REFUND"); 
+    key =  "ZeqfxucknolCuz7U";
+  var n = params["ZeqfxucknolCuz7U"].includes("REFUND"); 
    var m = params[key].includes("|");  
         if(n == true )
         {

@@ -767,11 +767,21 @@ nav {
 
 a:hover {
   text-decoration: none;
-  color: #232323;
+  color: #b23301;
 }
 
 .payment__btn {
   color: #232323;
+}
+
+.btn__dark {
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+}
+
+.btn__dark:hover {
+  color: #b23301;
 }
 
 

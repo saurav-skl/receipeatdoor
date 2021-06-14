@@ -2,6 +2,7 @@
   <div class="col-md-4 offset-md-4">
     <% if(session.cart){ %>
     <div class="card">
+      <div style="margin: auto">Confirm Your Order's</div>
       <div class="card-body">
         <form class="" action="/paynow" method="POST">
           <div class="form-group">
@@ -38,12 +39,9 @@
               value=""
               required
             />
-          </div>
-          <div class="form-group">
-            <label for="">Amount: </label>
             <input
               class="form-control"
-              type="text"
+              type="hidden"
               name="amount"
               value="<%= session.cart.totalPrice %>"
             />
@@ -52,7 +50,9 @@
             <button class="btn form-control payment__btn">Pay Now</button>
           </div>
         </form>
-        <div><a href="/customer-orders">Go in cart</a></div>
+        <div class="btn__dark">
+          <a class="mx-auto" href="/customer-orders">Go in cart</a>
+        </div>
       </div>
     </div>
     <% } %>

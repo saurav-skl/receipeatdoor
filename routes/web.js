@@ -60,6 +60,7 @@ function initRoutes(app) {
       !paymentDetails.customerEmail ||
       !paymentDetails.customerPhone
     ) {
+      console.log(paymentDetails);
       res.status(400).send("Payment failed");
     } else {
       var params = {};
@@ -73,7 +74,15 @@ function initRoutes(app) {
       params["CALLBACK_URL"] = process.env.CALLBACK_URL;
       params["EMAIL"] = paymentDetails.customerEmail;
       params["MOBILE_NO"] = paymentDetails.customerPhone;
-
+      console.log(
+        process.env.PAYTM_MID,
+        process.env.PAYTM_WEBSITE,
+        paymentDetails.customerId,
+        paymentDetails.amount,
+        process.env.CALLBACK_URL,
+        paymentDetails.customerEmail,
+        paymentDetails.customerPhone
+      );
       checksum_lib.genchecksum(
         params,
         process.env.PAYTM_KEY,
