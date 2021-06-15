@@ -4,13 +4,8 @@ const cartControllers = require("../app/http/controllers/customers/cartControlle
 const orderControllers = require("../app/http/controllers/customers/orderControllers");
 const adminOrderController = require("../app/http/controllers/admin/orderControllers");
 const statusController = require("../app/http/controllers/admin/statusControllers");
-const express = require("express");
-const parseUrl = express.urlencoded({ extended: false });
-const parseJson = express.json({ extended: false });
-const checksum_lib = require("../resources/views/Paytm/checksum");
-const config = require("../resources/views/Paytm/config");
 const payment = require("../app/http/controllers/payment/payment");
-const qs = require("querystring");
+
 
 // Middleware
 const guest = require("../app/http/middleware/guest");
