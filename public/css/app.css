@@ -306,11 +306,11 @@ body {
 }
 
 nav li:nth-last-child a {
-  background: #fe5f1e;
+  background: #1186f3;
 }
 
 nav li:nth-last-child a:hover {
-  background: #b23301;
+  background: #01227e;
 }
 
 nav li a {
@@ -318,7 +318,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color: #fe5f1e;
+  color: #1186f3;
 }
 
 #logo {
@@ -342,13 +342,13 @@ section.hero {
 }
 
 .add-to-cart {
-  border: 2px solid #fe5f1e;
-  color: #fe5f1e;
+  border: 2px solid #1186f3;
+  color: #1186f3;
   transition: all 0.3s ease-in-out;
 }
 
 .add-to-cart:hover {
-  background: #fe5f1e;
+  background: #1186f3;
   border-color: #fff;
   color: #fff;
 }
@@ -358,16 +358,16 @@ section.hero {
 }
 
 .cartlogo {
-  background: #fe5f1e;
+  background: #1186f3;
 }
 
 .btn__primary {
-  background: #fe5f1e;
+  background: #1186f3;
   transition: all 0.3s ease-in-out;
 }
 
 .btn__primary:hover {
-  background: #b23301;
+  background: #01227e;
 }
 
 .cart {
@@ -398,7 +398,7 @@ section.hero {
   display: flex;
   flex-direction: row;
   gap: 50px;
-  color: #fe5f1e;
+  color: #1186f3;
   font-weight: 900;
   font-size: 1.2em;
 }
@@ -420,7 +420,7 @@ section.hero {
   margin: 5px auto;
   height: 4px;
   width: 50%;
-  background-color: #b23301;
+  background-color: #01227e;
   border-radius: 2px;
   transition-duration: 200ms;
   display: block;
@@ -481,7 +481,7 @@ section.hero {
 .login #content-wrapper #signin-button {
   width: 70%;
   height: 75px;
-  background-color: #fe5f1e;
+  background-color: #1186f3;
   border: none;
   margin: 20px auto 10px;
   color: #fff;
@@ -492,13 +492,13 @@ section.hero {
 }
 
 .login #content-wrapper #signin-button:hover {
-  box-shadow: 0 20px 20px #fe5f1e;
+  box-shadow: 0 20px 20px #1186f3;
 }
 
 .login #content-wrapper #register-button {
   width: 70%;
   height: 75px;
-  background-color: #fe5f1e;
+  background-color: #1186f3;
   border: none;
   margin: 20px auto 10px;
   color: #fff;
@@ -509,11 +509,11 @@ section.hero {
 }
 
 .login #content-wrapper #register-button:hover {
-  box-shadow: 0 20px 20px #fe5f1e;
+  box-shadow: 0 20px 20px #1186f3;
 }
 
 .login #content-wrapper .span__name {
-  color: #fe5f1e;
+  color: #1186f3;
 }
 
 .login #content-wrapper #other-option-wrapper {
@@ -555,7 +555,7 @@ section.hero {
 .login #content-wrapper #other-icon-wrapper .other-icon:hover {
   border: solid #fff 2px;
   background-color: #fff;
-  box-shadow: 0 20px 20px #fe5f1e;
+  box-shadow: 0 20px 20px #1186f3;
 }
 
 .login #content-wrapper #other-icon-wrapper .other-icon svg {
@@ -580,7 +580,7 @@ section.hero {
 }
 
 a.link {
-  color: #fe5f1e;
+  color: #1186f3;
 }
 
 section.status {
@@ -677,11 +677,11 @@ section.status {
 }
 
 .status-box ul li.current span {
-  color: #fe5f1e;
+  color: #1186f3;
 }
 
 .status-box ul li.current span:after {
-  background: #fe5f1e;
+  background: #1186f3;
 }
 
 .status-box ul li small {
@@ -754,20 +754,20 @@ section.status {
 
 a {
   text-decoration: none;
-  color: #fe5f1e;
+  color: #1186f3;
 }
 
 .card {
-  background-color: #fe5f1e;
+  background-color: #1186f3;
 }
 
 nav {
-  color: #fe5f1e;
+  color: #1186f3;
 }
 
 a:hover {
   text-decoration: none;
-  color: #b23301;
+  color: #01227e;
 }
 
 .payment__btn {
@@ -781,7 +781,18 @@ a:hover {
 }
 
 .btn__dark:hover {
-  color: #b23301;
+  color: #01227e;
+}
+
+.cartchagngebtn button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
 }
 
 
